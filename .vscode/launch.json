@@ -1,0 +1,29 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "TestResults",
+            "request": "launch",
+            "mainClass": "com.erdemiryigit.mychatapp.TestResults",
+            "projectName": "mychatapp"
+        },
+        {
+            "type": "java",
+            "name": "MyClass",
+            "request": "launch",
+            "mainClass": "com.erdemiryigit.mychatapp.MyClass",
+            "projectName": "mychatapp"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MychatappApplication<mychatapp>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.erdemiryigit.mychatapp.MychatappApplication",
+            "projectName": "mychatapp",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=65519 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=mychatapp"
+        }
+    ]
+}
