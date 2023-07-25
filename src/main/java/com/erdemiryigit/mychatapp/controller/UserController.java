@@ -23,7 +23,7 @@ public class UserController {
     @Autowired
     UserService userService;
 
-    @GetMapping("/test")
+    @GetMapping
     public String getUser() {
         return "getUser was called";
     }

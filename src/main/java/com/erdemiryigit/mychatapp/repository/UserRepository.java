@@ -1,10 +1,9 @@
 package com.erdemiryigit.mychatapp.repository;
 
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
+import org.springframework.data.repository.CrudRepository;
 
 import com.erdemiryigit.mychatapp.entity.UserEntity;
 
-@Repository
-public interface UserRepository extends JpaRepository<UserEntity, Long> {
+public interface UserRepository extends CrudRepository<UserEntity, Long> {
+    UserEntity findByEmail(String email);
 }

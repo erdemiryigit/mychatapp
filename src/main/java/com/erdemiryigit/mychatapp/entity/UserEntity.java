@@ -13,7 +13,7 @@ public class UserEntity implements java.io.Serializable {
     @GeneratedValue
     private Long id;
 
-    @Column(nullable = false)
+    @Column(nullable = false, unique = true)
     private String userId;
 
     @Column(nullable = false, length = 30)
@@ -22,7 +22,7 @@ public class UserEntity implements java.io.Serializable {
     @Column(nullable = false, length = 30)
     private String lastName;
 
-    @Column(nullable = false, length = 50, unique = true)
+    @Column(nullable = false, length = 50)
     private String email;
 
     @Column(nullable = false)

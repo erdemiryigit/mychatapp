@@ -2,12 +2,18 @@ package com.erdemiryigit.mychatapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-//@EnableJpaRepositories("com.erdemiryigit.mychatapp.repository")
 @SpringBootApplication
 public class MychatappApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(MychatappApplication.class, args);
+	}
+
+	@Bean
+	public BCryptPasswordEncoder bCryptPasswordEncoder() {
+		return new BCryptPasswordEncoder();
 	}
 }
